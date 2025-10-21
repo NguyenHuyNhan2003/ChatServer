@@ -28,9 +28,7 @@ class ChatLogic {
             }
             const response = await axios.post(
                 api,
-                {
-                    prompt: question
-                }
+                {prompt: question}
             )
 
             let answer = response.data.answer;
